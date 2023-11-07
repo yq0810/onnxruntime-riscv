@@ -6,6 +6,7 @@
 cmake_minimum_required(VERSION 3.13)
 cmake_policy(SET CMP0069 NEW)
 set(CMAKE_POLICY_DEFAULT_CMP0069 NEW)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-maybe-uninitialized")
 
 if (${CMAKE_VERSION} VERSION_GREATER_EQUAL "3.15")
   cmake_policy(SET CMP0092 NEW)
