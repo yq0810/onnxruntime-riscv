@@ -68,7 +68,7 @@ option(onnxruntime_SYSTOLIC_FP32 "If Systolic is enabled, whether to use for fp3
 if(onnxruntime_SYSTOLIC_FP32)
   message(STATUS "BUILDING FOR FP32 SYSTOLIC")
 endif()
-option(onnxruntime_DEV_MODE "Enable developer warnings and treat most of them as error." OFF)
+option(onnxruntime_DEV_MODE "Enable developer warnings and treat most of them as error." ON)
 option(onnxruntime_MSVC_STATIC_RUNTIME "Compile for the static CRT" OFF)
 option(onnxruntime_GCC_STATIC_CPP_RUNTIME "Compile for the static libstdc++" OFF)
 option(onnxruntime_BUILD_UNIT_TESTS "Build ONNXRuntime unit tests" ON)
